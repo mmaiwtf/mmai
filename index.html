@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/jQuery.js"></script>
+    <script src="./script/jquery.scrollTo.min.js"></script>
+
     <title>AIMEME</title>
 </head>
 <body>
@@ -14,8 +17,8 @@
 
             <div id="button_container" class="button_container_c">
                 <div>Home</div>
-                <div>About</div>
-                <div>Roadmap</div>
+                <div id="about_button">About</div>
+                <div id="roadmap_button">Roadmap</div>
             </div>
 
             <div id="navigator_mint_s">
@@ -42,6 +45,7 @@
 
     <div id="about_c">
         <div class="tag_container">
+            <a name="about_tag"></a>
             <img src="./res/imgs/tag_container_icon.png" alt="">
             <span>ABOUT</span>
         </div>
@@ -88,5 +92,17 @@
 
     <div class="sperator_s"></div>
     <p class="icp_s">©2024 by aimeme. All rights reserved!</p>
+
+
+    <script>
+        $('#about_button').click(function(){
+            $(window).scrollTo($("#about_c"), 800)
+        })
+
+        $('#roadmap_button').click(function() {
+            $(window).scrollTo($("#roadmap_c"), 800)
+        })
+    </script>
+
 </body>
 </html>
