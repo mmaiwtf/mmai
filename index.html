@@ -19,7 +19,7 @@
             </div>
 
             <div id="button_container" class="button_container_c">
-                <div>Home</div>
+                <div class="home_button">Home</div>
                 <div id="about_button">About</div>
                 <div id="roadmap_button">Roadmap</div>
             </div>
@@ -32,7 +32,7 @@
         <div class="banner_desc_s">
             <img src="./res/imgs/banner_desc_title.png" alt="">
             <div class="banner_desc_descs">Humans won't be able to reliably supervise any systems much<br/>smarter than us</div>
-            <img src="./res/imgs/banner_desc_passort_desc.png" style="height: 42px; margin-top: 24px;" alt="">
+            <img class="banner_desc_passort_s" src="./res/imgs/banner_desc_passort_desc.png" alt="">
         </div>
 
 
@@ -90,38 +90,7 @@
 
         <div class="hot_nfts_container_c">
             <div class="carousel">
-                <div class="carousel_set">
-                    <div class="carousel_set_content">
-                        <img src="./res/imgs/demo_nft.jpeg" alt="">
-                        <p class="carousel_set_content_name">Bravo</p>
-                        <p class="carousel_set_content_id">ID #2433</p>
-                    </div>
-                    <div class="carousel_set_content">
-                        <img src="./res/imgs/demo_nft.jpeg" alt="">
-                        <p class="carousel_set_content_name">Bravo</p>
-                        <p class="carousel_set_content_id">ID #2433</p>
-                    </div>
-                    <div class="carousel_set_content">
-                        <img src="./res/imgs/demo_nft.jpeg" alt="">
-                        <p class="carousel_set_content_name">Bravo</p>
-                        <p class="carousel_set_content_id">ID #2433</p>
-                    </div>
-                    <div class="carousel_set_content">
-                        <img src="./res/imgs/demo_nft.jpeg" alt="">
-                        <p class="carousel_set_content_name">Bravo</p>
-                        <p class="carousel_set_content_id">ID #2433</p>
-                    </div>
-                    <div class="carousel_set_content">
-                        <img src="./res/imgs/demo_nft.jpeg" alt="">
-                        <p class="carousel_set_content_name">Bravo</p>
-                        <p class="carousel_set_content_id">ID #2433</p>
-                    </div>
-                    <div class="carousel_set_content">
-                        <img src="./res/imgs/demo_nft.jpeg" alt="">
-                        <p class="carousel_set_content_name">Bravo</p>
-                        <p class="carousel_set_content_id">ID #2433</p>
-                    </div>
-                </div>
+                <div class="carousel_set" id="carousel_set_d"></div>
             </div>
         </div>
     </div>
@@ -142,7 +111,11 @@
 
 
     <script>
-
+        var nfts = [1,2,3,4,5,6]
+        for (x in nfts) {
+            $('#carousel_set_d').append("<div class='carousel_set_content'><img src='./res/imgs/demo_nft.jpeg' alt=''><p class='carousel_set_content_name'>Bravo</p><p class='carousel_set_content_id'>ID #2433</p></div>")
+        }
+        
         $("#icp_c").text("©" + new Date().getFullYear() + " by aimeme. All rights reserved!")
 
         $('#about_button').click(function(){

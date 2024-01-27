@@ -11,6 +11,7 @@ body {
 div {
     margin: 0;
     padding: 0;
+    cursor: default;
 }
 
 @font-face {
@@ -76,6 +77,17 @@ div {
     font-size: 28px;
     line-height: 34.13px;
     color: #66C8FF;
+}
+
+.banner_desc_passort_s {
+    height: 42px; 
+    margin-top: 24px;
+    object-fit: cover;
+    aspect-ratio: 539/42;
+}
+
+.home_button, #navigator_mint_s {
+    cursor: no-drop;
 }
 
 .tag_container {
