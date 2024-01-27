@@ -1,0 +1,246 @@
+html{ 
+    background-color: #0B0D0F;
+    font-family: Quantico;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Quantico;
+    src: url("../res/fonts/Quantico-Regular.ttf") format('truetype');
+}
+@font-face {
+    font-family: Pixel;
+    src: url("../res/fonts/Montserrat-Regular.ttf") format('truetype');
+}
+
+#button_container{
+    gap: 56px;
+    display: flex;
+    align-items: center;
+}
+
+.button_container_c div {
+    font-family: Pixel;
+    font-size: 16px;
+}
+
+#navigator {
+    height: 88px;
+    display: flex;
+    padding-left: 32px;
+    padding-right: 32px;
+    justify-content:space-between;
+    align-items: center;
+}
+
+#navigator_title {
+    font-size: 26px;
+}
+
+.navigator div {
+    color: #66C8FF;
+}
+
+
+#navigator_mint_s {
+    font-size: 16;
+    font-family: Pixel;
+    border: #66C8FF solid 1px;
+    padding: 5px 32px 5px 32px ;
+}
+
+#banner_container {
+    height: 401px;
+}
+
+#banner_bg_s {
+    height: 401px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+}
+
+.banner_desc_s {
+    align-items: center;
+    margin-top: 56px;
+    text-align: center;
+}
+
+.banner_desc_descs {
+    margin-top: 24px;
+    font-family: Pixel;
+    font-size: 28px;
+    line-height: 34.13px;
+    color: #66C8FF;
+}
+
+.tag_container {
+    display: flex;
+    gap: 8px;
+    font-size: 40px;
+    align-items: center;
+    color: #fff;
+}
+
+#roadmap_c {
+    margin: 100px 120px 0px 120px;
+    aspect-ratio: 1200/577;
+}
+
+.roadmap_details_s {
+    margin-top: 24px;
+    object-fit: scale-down;
+}
+
+#about_c {
+    margin: 100px 120px 0px 120px;
+    aspect-ratio: 1200/336;
+}
+
+.about_details_s {
+    display: flex;
+    gap: 174px;
+    height: 100%;
+    margin-top: 24px;
+}
+
+.about_details_s p{
+    color: #fff;
+    font-size: 20px;
+    line-height: 28.6px;
+}
+
+.about_details_desc_title_s {
+    height: 75px;
+    text-align: center;
+    margin: auto;
+}
+
+.about_details_desc_container_s {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.about_details_desc_s {
+    height: 100%;
+    opacity: 0.2;
+    width: 100%;
+    right: inherit;
+    transform: skew(-20deg);
+    border: #4FF3FD solid 1px;
+    position: absolute;
+}
+
+.about_details_desc_o_s, .about_details_desc_t_s {
+    font-size: 20px;
+    line-height: 28.6px;
+}
+
+.about_details_desc_text_container_s {
+    position: absolute;
+    top: 32px;
+    left: 90px;
+    right: 71px;
+
+}
+
+#tokenomics_c {
+    margin: 100px 120px 0px 120px;
+    aspect-ratio: 1200/380;
+}
+
+.tokenomics_details_container_s {
+    display: flex;
+    justify-content: space-between;
+    gap: 75;
+}
+
+.tokenomics_details_desc_s {
+    margin: auto;
+    margin-left: 0;
+}
+
+.tokenomics_details_desc_s p{
+    margin: 0;
+    padding: 0;
+}
+
+.tokenomics_details_desc_o_s, .tokenomics_details_desc_tr_s {
+    font-size: 20px;
+    line-height: 28.6px;
+}
+
+.tokenomics_details_desc_t_s {
+    font-size: 80px;
+    color: #4FF3FD;
+    line-height: 100px;
+}
+
+.tokenomics_details_desc_o_s {
+    color: #fff;
+}
+
+.tokenomics_details_desc_tr_s {
+    color: #666666;
+}
+
+.tokenomics_details_img_s {
+    margin-top: -44px;
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    float: right;
+}
+
+#contact_us_c {
+    margin-top: 32px;
+    text-align: center;
+}
+
+.contact_us_s p{
+    margin: 0 auto;
+    color: #fff;
+}
+
+p.contact_us_title {
+    font-size: 40px;
+    line-height: 57.2px;
+}
+
+p.contact_us_desc {
+    font-size: 20px;
+    line-height: 28.6px;
+}
+
+.contact_us_link_s {
+    margin-top: 32px;
+    gap: 40px;
+    display: inline-flex;
+}
+
+.sperator_s {
+    height: 1px;
+    background-color: #fff;
+    opacity: 0.2;
+    margin-left: 120px;
+    margin-right: 120px;
+    margin-top: 88px;
+}
+
+.icp_s {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+    line-height: 17.16px;
+}
