@@ -62,11 +62,11 @@ div {
     height: 401px;
 }
 
-#banner_bg_s {
-    height: 401px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: auto;
+.banner_bg_s {
+    background-color: #666666;
+    /* height: 401px; */
+    background: url("../res/imgs/banner_bg.jpg") center center no-repeat;
+    background-position-y: 0px;
 }
 
 .banner_desc_s {
@@ -89,6 +89,11 @@ div {
     font-size: 40px;
     align-items: center;
     color: #fff;
+}
+
+.tag_container img {
+    height: 48px;
+    width: 48px;
 }
 
 #roadmap_c {
@@ -151,7 +156,6 @@ div {
     top: 32px;
     left: 90px;
     right: 71px;
-
 }
 
 #tokenomics_c {
