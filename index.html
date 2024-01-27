@@ -91,10 +91,13 @@
     </div>
 
     <div class="sperator_s"></div>
-    <p class="icp_s">©2024 by aimeme. All rights reserved!</p>
+    <p class="icp_s" id="icp_c">© by aimeme. All rights reserved!</p>
 
 
     <script>
+
+        $("#icp_c").text("©" + new Date().getFullYear() + " by aimeme. All rights reserved!")
+
         $('#about_button').click(function(){
             $(window).scrollTo($("#about_c"), 800)
         })
