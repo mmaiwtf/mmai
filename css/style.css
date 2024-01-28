@@ -203,6 +203,11 @@ div {
     padding: 12px 12px 18px 12px;
 }
 
+.carousel_set_content img {
+    width: 242px;
+    height: 242px;
+}
+
 .carousel_set_content_name {
     font-size: 18px;
     color: #fff;
@@ -251,8 +256,8 @@ div {
 
 .tokenomics_details_img_s {
     margin-top: -44px;
-    height: 100%;
-    aspect-ratio: 1 / 1;
+    width: 348px;
+    height: 358px;
     float: right;
 }
 

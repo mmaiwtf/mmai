@@ -111,10 +111,13 @@
 
 
     <script>
-        var nfts = [1,2,3,4,5,6]
-        for (x in nfts) {
-            $('#carousel_set_d').append("<div class='carousel_set_content'><img src='./res/imgs/demo_nft.jpeg' alt=''><p class='carousel_set_content_name'>Bravo</p><p class='carousel_set_content_id'>ID #2433</p></div>")
-        }
+
+        const nfts = [9127,7156,9380,9382,7160,7661,5221,5222,5223,8221]
+
+        nfts.forEach((item) => {
+            const divstr = "<div class='carousel_set_content'><img src='./res/imgs/nfts/"+ item + ".png' alt=''><p class='carousel_set_content_name'>" + item + "</p><p class='carousel_set_content_id'>ID #" + item + "</p></div>"
+            $('#carousel_set_d').append(divstr)
+        })
         
         $("#icp_c").text("©" + new Date().getFullYear() + " by aimeme. All rights reserved!")
 
