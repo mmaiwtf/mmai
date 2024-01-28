@@ -4,8 +4,10 @@ html{
 }
 
 body {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+    width: 1440px;
+    align-items: center;
 }
 
 div {
@@ -106,6 +108,7 @@ div {
 #roadmap_c {
     margin: 100px 120px 0px 120px;
     aspect-ratio: 1200/577;
+    text-align: center;
 }
 
 .roadmap_details_s {
@@ -144,13 +147,14 @@ div {
 }
 
 .about_details_desc_s {
+
+    width: 100%;
     height: 100%;
     opacity: 0.2;
-    width: 100%;
-    right: inherit;
     transform: skew(-20deg);
     border: #4FF3FD solid 1px;
     position: absolute;
+    right: 40px;
 }
 
 .about_details_desc_o_s, .about_details_desc_t_s {
@@ -160,9 +164,9 @@ div {
 
 .about_details_desc_text_container_s {
     position: absolute;
-    top: 32px;
-    left: 90px;
-    right: 71px;
+    top: 42px;
+    left: 30px;
+    right: 80px;
 }
 
 #tokenomics_c {
@@ -189,7 +193,6 @@ div {
 }
 
 .carousel_set{
-    background-color: #000;
     margin-top: 40px;
     display: flex;    
     gap: 45px;
