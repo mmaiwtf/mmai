@@ -73,6 +73,11 @@ div {
     text-align: center;
 }
 
+.banner_desc_title_s{
+    width: 300px;
+    height: 64px;
+}
+
 .banner_desc_descs {
     margin-top: 24px;
     font-family: Pixel;
@@ -113,7 +118,8 @@ div {
 
 .roadmap_details_s {
     margin-top: 24px;
-    object-fit: scale-down;
+    width: 1200px;
+    height: 496px;
 }
 
 #about_c {
@@ -136,6 +142,7 @@ div {
 
 .about_details_desc_title_s {
     height: 75px;
+    width: 351.56px;
     text-align: center;
     margin: auto;
 }
@@ -288,6 +295,11 @@ p.contact_us_desc {
     margin-top: 32px;
     gap: 40px;
     display: inline-flex;
+}
+
+.contact_us_link_s img {
+    width: 64px;
+    height: 64px;
 }
 
 .sperator_s {
