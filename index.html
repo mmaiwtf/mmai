@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./script/jQuery.js"></script>
+    <script src="./script/jquery.scrollTo.min.js"></script>
+
+    <title>AIMEME</title>
+</head>
+<body>
+    <div class="banner_bg_s" id="banner_container">
+        <div id="navigator" class="navigator">
+            <div id="navigator_title">
+                Aimeme
+            </div>
+
+            <div id="button_container" class="button_container_c">
+                <div class="home_button">Home</div>
+                <div id="about_button">About</div>
+                <div id="roadmap_button">Roadmap</div>
+            </div>
+
+            <div id="navigator_mint_s">
+                Mint
+            </div>
+        </div>
+
+        <div class="banner_desc_s">
+            <img class="banner_desc_title_s" src="./res/imgs/banner_desc_title.png" alt="">
+            <div class="banner_desc_descs">Humans won't be able to reliably supervise any systems much<br/>smarter than us</div>
+            <img class="banner_desc_passort_s" src="./res/imgs/banner_desc_passort_desc.png" alt="">
+        </div>
+
+
+    </div>
+
+    <div id="roadmap_c">
+        <div class="tag_container">
+            <img src="./res/imgs/tag_container_icon.gif" alt="">
+            <span>ROADMAP</span>
+        </div>
+        <img src="./res/imgs/roadmap_details.png" alt="" class="roadmap_details_s">
+    </div>
+
+    <div id="about_c">
+        <div class="tag_container">
+            <a name="about_tag"></a>
+            <img src="./res/imgs/tag_container_icon.gif" alt="">
+            <span>ABOUT</span>
+        </div>
+
+        <div class="about_details_s">
+            
+            <img src="./res/imgs/banner_desc_title.png" alt="" class="about_details_desc_title_s">
+            <div class="about_details_desc_container_s">
+                <div class="about_details_desc_s"></div>
+                <div class="about_details_desc_text_container_s">
+                    <p class="about_details_desc_o_s">* The aiMeme.wtf team is a spontaneous meme worldview model community with 20 million followers on social media worldwide.</p>
+                    <p class="about_details_desc_t_s">* The team has been developing products based on generative AI for more than 5 years, working with several top brands, thousands of creators and millions of fans.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tokenomics_c">
+        <div class="tag_container">
+            <img src="./res/imgs/tag_container_icon.gif" alt="">
+            <span>TOKENOMICS</span>
+        </div>
+
+        <div class="tokenomics_details_container_s">
+            <div class="tokenomics_details_desc_s">
+                <p class="tokenomics_details_desc_o_s">Limited edition mint</p>
+                <p class="tokenomics_details_desc_t_s">2000</p>
+                <p class="tokenomics_details_desc_tr_s">The Fair Launch is about to begin. 10% of all revenue will be used to burn the Meme inscription</p>
+            </div>
+            <img class="tokenomics_details_img_s" src="./res/imgs/tokenomics_coin.png" alt="">
+        </div>
+    </div>
+
+    <div id="hot_nft_c">
+        <div class="tag_container">
+            <img src="./res/imgs/tag_container_icon.gif" alt="">
+            <span>HOT NFT</span>
+        </div>
+
+        <div class="hot_nfts_container_c">
+            <div class="carousel">
+                <div class="carousel_set" id="carousel_set_d"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact_us_c" class="contact_us_s">
+        <p class="contact_us_title">CONTACT US</p>
+        <p class="contact_us_desc">Scriptions lovers are welcome to join us</p>
+        <div class="contact_us_link_s">
+            <a href="https://discord.com/" target="_blank"><img src="./res/imgs/contact_us_discord_icon.png" alt="discord"></a>
+            <a href="https://medium.com/" target="_blank"><img src="./res/imgs/contact_us_medium_icon.png" alt="medium"></a>
+            <a href="https://twitter.com/" target="_blank"><img src="./res/imgs/contact_us_twitter_icon.png" alt="twitter"></a>
+            <a href="https://telegram.org/" target="_blank"><img src="./res/imgs/contact_us_telegram_icon.png" alt="telegram"></a>
+        </div>
+    </div>
+
+    <div class="sperator_s"></div>
+    <p class="icp_s" id="icp_c">© by aimeme. All rights reserved!</p>
+
+
+    <script>
+
+        const nfts = [9127,7156,9380,9382,7160,7661,5221,5222,5223,8221]
+
+        nfts.forEach((item) => {
+            const divstr = "<div class='carousel_set_content'><img src='./res/imgs/nfts/"+ item + ".png' alt=''><p class='carousel_set_content_name'>" + item + "</p><p class='carousel_set_content_id'>ID #" + item + "</p></div>"
+            $('#carousel_set_d').append(divstr)
+        })
+        
+        $("#icp_c").text("©" + new Date().getFullYear() + " by aimeme. All rights reserved!")
+
+        $('#about_button').click(function(){
+            $(window).scrollTo($("#about_c"), 800)
+        })
+
+        $('#roadmap_button').click(function() {
+            $(window).scrollTo($("#roadmap_c"), 800)
+        })
+    </script>
+
+</body>
+</html>
