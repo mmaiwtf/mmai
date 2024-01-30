@@ -309,7 +309,7 @@ p.contact_us_desc {
 }
 
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1075px) {
     body {
         width: 375px;
     }
@@ -351,7 +351,7 @@ p.contact_us_desc {
     }
     .roadmap_details_s {
         margin: 32px 0 0 0;
-        height: 340px;
+        max-height: 340px;
         aspect-ratio: 351.71/340;
         background: url('../res/imgs/roadmap_details_mobile.svg') no-repeat;
     }    
