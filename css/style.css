@@ -6,7 +6,7 @@ html{
 body {
     margin: 0 auto;
     padding: 0;
-    width: 1440px;
+    max-width: 1440px;
     align-items: center;
 }
 
@@ -21,8 +21,13 @@ div {
     src: url("../res/fonts/Quantico-Regular.ttf") format('truetype');
 }
 @font-face {
-    font-family: Pixel;
+    font-family: Montserrat;
     src: url("../res/fonts/Montserrat-Regular.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: Pixel;
+    src: url("../res/fonts/04B_21__.TTF") format('truetype');
 }
 
 #button_container{
@@ -32,7 +37,7 @@ div {
 }
 
 .button_container_c div {
-    font-family: Pixel;
+    font-family: Montserrat;
     font-size: 16px;
 }
 
@@ -46,7 +51,9 @@ div {
 }
 
 #navigator_title {
-    font-size: 26px;
+    font-size: 28px;
+    font-family: Pixel;
+    line-height: 30px;
 }
 
 .navigator div {
@@ -55,14 +62,14 @@ div {
 
 
 #navigator_mint_s {
-    font-size: 16;
-    font-family: Pixel;
+    font-size: 16px;
+    font-family: Montserrat;
     border: #66C8FF solid 1px;
     padding: 5px 32px 5px 32px ;
+    cursor: no-drop;
 }
 
 .banner_bg_s {
-    height: 401px;
     background: url("../res/imgs/banner_bg.jpg") center center no-repeat;
     background-position-y: 0px;
 }
@@ -80,21 +87,12 @@ div {
 
 .banner_desc_descs {
     margin-top: 24px;
-    font-family: Pixel;
     font-size: 28px;
     line-height: 34.13px;
-    color: #66C8FF;
-}
-
-.banner_desc_passort_s {
-    height: 42px; 
-    margin-top: 24px;
-    object-fit: cover;
-    aspect-ratio: 539/42;
-}
-
-.home_button, #navigator_mint_s {
-    cursor: no-drop;
+    background: linear-gradient(90deg, #66C8FF 0%, #0070D6 96.79%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .tag_container {
@@ -112,83 +110,68 @@ div {
 
 #roadmap_c {
     margin: 100px 120px 0px 120px;
-    aspect-ratio: 1200/577;
     text-align: center;
 }
 
 .roadmap_details_s {
-    margin-top: 24px;
-    width: 1200px;
-    height: 496px;
+    margin: 48px 0 0 0;
+    height: 260px;
+    aspect-ratio: 1224/260;
+    background: url('../res/imgs/roadmap_details_n.svg') no-repeat;
 }
+
 
 #about_c {
     margin: 100px 120px 0px 120px;
-    aspect-ratio: 1200/336;
 }
 
 .about_details_s {
     display: flex;
-    gap: 174px;
+    gap: 156px;
     height: 100%;
     margin-top: 24px;
 }
 
-.about_details_s p{
-    color: #fff;
-    font-size: 20px;
-    line-height: 28.6px;
+.about_details_desc_title_container_s {
+    display: flex;
+    align-items:center;
+    justify-content: left;
 }
 
 .about_details_desc_title_s {
-    height: 75px;
-    width: 351.56px;
-    text-align: center;
-    margin: auto;
+    max-height: 72px;
+    max-width: 265px;
 }
 
 .about_details_desc_container_s {
-    position: relative;
-    height: 100%;
-    width: 100%;
+    position: relative; 
+    padding: 40px 80px 40px 80px;
+    display: flex;  
+    align-items: center;
+    max-height: 194px;
+    transform: skew(-15deg);
+    border: rgba(79, 243, 253, 0.2) solid 1px;
+
 }
 
-.about_details_desc_s {
-
-    width: 100%;
-    height: 100%;
-    opacity: 0.2;
-    transform: skew(-20deg);
-    border: #4FF3FD solid 1px;
-    position: absolute;
-    right: 40px;
-}
-
-.about_details_desc_o_s, .about_details_desc_t_s {
-    font-size: 20px;
-    line-height: 28.6px;
+.about_details_desc_o_s {
+    color: #fff;
+    font-size: 24px;
+    line-height: 38px;
 }
 
 .about_details_desc_text_container_s {
-    position: absolute;
-    top: 42px;
-    left: 30px;
-    right: 80px;
+    transform: skew(15deg);
 }
 
 #tokenomics_c {
     margin: 100px 120px 0px 120px;
-    aspect-ratio: 1200/380;
 }
 
 #hot_nft_c {
     margin: 100px 120px 0px 120px;
     aspect-ratio: 1200/424;
 }
-
-/* .hot_nfts_container_c {
-    background-color: #666666;
-} */
 
 .carousel {
     overflow: hidden;
@@ -252,7 +235,7 @@ div {
 
 .tokenomics_details_desc_t_s {
     font-size: 80px;
-    color: #4FF3FD;
+    color: #64C6FF;
     line-height: 100px;
 }
 
@@ -324,3 +307,135 @@ p.contact_us_desc {
     0% {margin-left: 0px;}
     100% {margin-left:calc(100% - 45px * 5 - 266px * 6);}
 }
+
+
+@media screen and (max-width: 1080px) {
+    body {
+        width: 375px;
+    }
+
+    #navigator {
+        height: 64px;
+    }
+
+    #navigator_title {
+        font-size: 26px;
+    }
+    
+    #button_container {
+        display: none;
+    }
+    .banner_desc_s {
+        margin-top: 32px;
+    }
+    .banner_desc_title_s{
+        width: 147px;
+        height: 40px;
+    }
+    .banner_desc_descs {
+        margin-top: 12px;
+        font-size: 20px;
+        line-height: 28.6px;
+        margin-left: 22px;
+        margin-right: 22px;
+    }
+    .tag_container {
+        font-size: 20px;
+    }
+    .tag_container img {
+        height: 24px;
+        width: 24px;
+    }
+    #roadmap_c {
+        margin: 32px 12px 0px 12px;
+    }
+    .roadmap_details_s {
+        margin: 32px 0 0 0;
+        height: 340px;
+        aspect-ratio: 351.71/340;
+        background: url('../res/imgs/roadmap_details_mobile.svg') no-repeat;
+    }    
+    #about_c {
+        margin: 48px 12px 0px 12px;
+    }
+    .about_details_desc_title_container_s {
+        display: none;
+    }
+    .about_details_desc_container_s {
+        padding: 16px 20px 16px 20px;
+        max-height: 124px;
+        left: 16px;
+        margin-right: 32px;
+    }
+    .about_details_desc_o_s {
+        margin-left: 20px;
+        font-size: 16px;
+        line-height: 22.8px;
+        
+    }
+    #tokenomics_c {
+        margin: 48px 12px 0px 12px;
+    }    
+    .tokenomics_details_desc_o_s, .tokenomics_details_desc_tr_s, p.contact_us_desc, .carousel_set_content_name {
+        font-size: 16px;
+        line-height: 22.8px;
+    }
+    .tokenomics_details_desc_t_s {
+        font-size: 60px;
+        line-height: 85.8px;
+    }
+    .tokenomics_details_container_s {
+        flex-direction: column;
+        gap: 0;
+    }
+    .tokenomics_details_img_s {
+        margin-top: 0;
+    }
+    .tokenomics_details_desc_s {
+        margin-top: 32px;
+    }
+    #hot_nft_c {
+        margin: 48px 12px 0px 12px;
+        /* aspect-ratio: 1200/424; */
+    }
+    p.contact_us_title {
+        font-size: 20px;
+        line-height: 28.6px;
+    }
+    .contact_us_link_s {
+        margin-top: 24px;
+        gap: 24px;
+    }
+    .contact_us_link_s img {
+        width: 32px;
+        height: 32px;
+    }
+    .sperator_s {
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 48px;
+    }
+    #contact_us_c {
+        margin-top: 48px;
+    }
+    .carousel_set{
+        margin-top: 32px; 
+        gap: 15px;
+        animation: hot_nft_animation 30s linear infinite;
+    }
+    .carousel_set_content {
+        width: 164px;
+    }
+    
+    .carousel_set_content img {
+        width: 140px;
+        height: 140px;
+    }
+
+    @keyframes hot_nft_animation {
+        100% {margin-left:calc(100% - 15px * 9 - 164px * 10);}
+    }
+    
+    
+}
+
