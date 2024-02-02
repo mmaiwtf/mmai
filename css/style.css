@@ -27,7 +27,7 @@ a {
 }
 @font-face {
     font-family: Montserrat;
-    src: url("../res/fonts/Montserrat-Regular.ttf") format('truetype');
+    src: url("../res/fonts/Montserrat-Regular.woff2") format('woff2');
 }
 
 @font-face {
