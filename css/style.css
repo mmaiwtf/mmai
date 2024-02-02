@@ -76,6 +76,7 @@ a {
 .banner_bg_s {
     background: url("../res/imgs/banner_bg.jpg") center center no-repeat;
     background-position-y: 0px;
+    padding-bottom: 32px;
 }
 
 .banner_desc_s {
@@ -350,14 +351,13 @@ p.contact_us_desc {
     #roadmap_c {
         margin: 32px 12px 0px 12px;
         align-items: center;
-        /* background-color: #fff; */
         align-content: center;
         justify-content: center;
     }
     .roadmap_details_s {
         margin: 32px 0 0 0;
         height: 340px;
-        width: 351px;
+        width: 352px;
         background: url('../res/imgs/roadmap_details_mobile.svg') no-repeat;
 
     }    
