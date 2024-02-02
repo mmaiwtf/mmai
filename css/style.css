@@ -16,6 +16,11 @@ div {
     cursor: default;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 @font-face {
     font-family: Quantico;
     src: url("../res/fonts/Quantico-Regular.ttf") format('truetype');
@@ -66,7 +71,6 @@ div {
     font-family: Montserrat;
     border: #66C8FF solid 1px;
     padding: 5px 32px 5px 32px ;
-    cursor: no-drop;
 }
 
 .banner_bg_s {
@@ -310,9 +314,6 @@ p.contact_us_desc {
 
 
 @media screen and (max-width: 1075px) {
-    body {
-        width: 375px;
-    }
 
     #navigator {
         height: 64px;
@@ -348,13 +349,22 @@ p.contact_us_desc {
     }
     #roadmap_c {
         margin: 32px 12px 0px 12px;
+        align-items: center;
+        /* background-color: #fff; */
+        align-content: center;
+        justify-content: center;
     }
     .roadmap_details_s {
         margin: 32px 0 0 0;
-        max-height: 340px;
-        aspect-ratio: 351.71/340;
+        height: 340px;
+        width: 351px;
         background: url('../res/imgs/roadmap_details_mobile.svg') no-repeat;
+
     }    
+    .roadmap_details_container_s {
+        display: flex;
+        justify-content: center;
+    }
     #about_c {
         margin: 48px 12px 0px 12px;
     }
@@ -366,12 +376,15 @@ p.contact_us_desc {
         max-height: 124px;
         left: 16px;
         margin-right: 32px;
+        max-width: 343px;
     }
+    .about_details_s {
+        justify-content: center;
+    }    
     .about_details_desc_o_s {
         margin-left: 20px;
         font-size: 16px;
         line-height: 22.8px;
-        
     }
     #tokenomics_c {
         margin: 48px 12px 0px 12px;
