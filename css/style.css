@@ -35,7 +35,7 @@ a {
     src: url("../res/fonts/04B_21__.TTF") format('truetype');
 }
 
-#button_container{
+.button_container_c {
     gap: 56px;
     display: flex;
     align-items: center;
@@ -46,7 +46,7 @@ a {
     font-size: 16px;
 }
 
-#navigator {
+.navigator {
     height: 88px;
     display: flex;
     padding-left: 32px;
@@ -55,7 +55,7 @@ a {
     align-items: center;
 }
 
-#navigator_title {
+.navigator_title {
     font-size: 28px;
     font-family: Pixel;
     line-height: 30px;
@@ -66,7 +66,7 @@ a {
 }
 
 
-#navigator_mint_s {
+.navigator_mint_s {
     font-size: 16px;
     font-family: Montserrat;
     border: #66C8FF solid 1px;
@@ -112,6 +112,32 @@ a {
     height: 48px;
     width: 48px;
 }
+
+.generator_s {
+    display: flex;
+    justify-content: center;
+}
+
+.generator_button {
+    width: 440px;
+    height: 56px;
+    font-size: 20px;
+    line-height: 30px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-family: Montserrat;
+    /* margin: 0 32px 0 32px; */
+    background: linear-gradient(90deg, #66C8FF 0%, #0070D6 96.79%);
+}
+
+.generator_button::after {
+    content: "\2192";
+    margin-left: 10px;
+    width: 12px;
+}
+
 
 #roadmap_c {
     margin: 100px 120px 0px 120px;
@@ -316,15 +342,15 @@ p.contact_us_desc {
 
 @media screen and (max-width: 1075px) {
 
-    #navigator {
+    .navigator {
         height: 64px;
     }
 
-    #navigator_title {
+    .navigator_title {
         font-size: 26px;
     }
     
-    #button_container {
+    .button_container_c {
         display: none;
     }
     .banner_desc_s {
@@ -452,3 +478,8 @@ p.contact_us_desc {
     
 }
 
+.generator_page_s {
+    background-color: red;
+    width: 500px;
+    height: 300px;
+}
