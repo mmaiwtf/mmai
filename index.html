@@ -39,7 +39,37 @@
     </div>
 
     <div class="generator_s">
-        <div class="generator_button" id="generator_c"><a href="./photo/generate.html">Generate</a></div>
+        <div class="generator_button" id="generator_c">Generate</div>
+    </div>
+
+    <div class="generator_page_box">
+        <div class="generator_page_container">
+            <div class="generator_page_navi">
+                <p>Generate</p>
+                <img id="generator_close_c" src="./res/imgs/generator_close.svg" alt="">
+            </div>
+            <div class="generator_page_content_container">  
+                <img class="generator_page_result" alt="">
+                <div class="generator_page_prompts_container">
+                    <div class="generator_page_prompts_title">
+                        <p>Prompts</p>
+                        <div class="generator_page_prompts_title_btn">Lucky</div>
+                    </div>
+                    <textarea id="generator_page_prompts_input" placeholder="Please enter prompts"></textarea>
+                    <div class="generator_button" id="generator_page_btn">Generate</div>
+                    <div class="generator_page_operation_container">
+                        <div>
+                            <img src="./res/imgs/generator_download.svg" alt="">
+                            <p>Download</p>
+                        </div>
+                        <div>
+                            <img src="./res/imgs/generator_share.svg" alt="">
+                            <p>Share</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div id="roadmap_c">
@@ -131,6 +161,16 @@
 
         $('#roadmap_button').click(function() {
             $(window).scrollTo($("#roadmap_c"), 800)
+        })
+
+        $('#generator_c').click(function() {
+            $('.generator_page_box').css("display", "block")
+            $('html').css("overflow", "hidden")
+        })
+
+        $('#generator_close_c').click(function(){
+            $('.generator_page_box').css("display", "none")
+            $('html').css("overflow", "auto")
         })
     </script>
 

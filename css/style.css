@@ -71,6 +71,7 @@ a {
     font-family: Montserrat;
     border: #66C8FF solid 1px;
     padding: 5px 32px 5px 32px ;
+    color: #66C8FF;
 }
 
 .banner_bg_s {
@@ -137,7 +138,6 @@ a {
     margin-left: 10px;
     width: 12px;
 }
-
 
 #roadmap_c {
     margin: 100px 120px 0px 120px;
@@ -339,6 +339,137 @@ p.contact_us_desc {
     100% {margin-left:calc(100% - 45px * 5 - 266px * 6);}
 }
 
+.generator_page_box {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.generator_page_container {
+    background-color: #16191D;
+    width: 765px;
+    height: 404px;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.generator_page_navi p{
+    font-size: 24px;
+    line-height: 30px;
+    font-family: Montserrat;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.generator_page_navi img{
+    float: right;
+}
+
+.generator_page_navi {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 24px;
+    animation: modal_animation 1s;
+}
+
+.generator_page_content_container {
+    margin: 65px 24px 48px 24px;
+    display: flex;
+    gap: 24px;
+}
+
+.generator_page_result {
+    width: 365px;
+    height: 267px;
+    background: url("../res/imgs/test_placeholder.jpg") center / cover;
+}
+
+.generator_page_prompts_container {
+    width: 365px;
+    height: 267px;
+}
+
+.generator_page_prompts_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.generator_page_prompts_title p {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    float: left;
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 24px;
+} 
+
+.generator_page_prompts_title div {
+    float: right;
+    border: #66C8FF solid 1px;
+    padding: 8px 18px 8px 18px ;
+    color: #66C8FF;
+    font-size: 14px;
+    line-height: 17px;
+} 
+
+#generator_page_prompts_input::placeholder {
+    color: #66C8FF80;
+}
+
+#generator_page_prompts_input {
+    resize: none;
+    color: #66C8FF;
+    width: calc(100% - 18px);
+    height: 110px;
+    margin-top: 12px;
+    background: rgba(102, 200, 255, 0.1);
+    border: 1px solid rgba(102, 200, 255, 0.5);
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 24px;
+    padding: 10px 8px 10px 8px;
+}
+
+#generator_page_btn {
+    width: 100%;
+    height: 48px;
+    margin-top: 12px;
+}
+
+.generator_page_operation_container {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.generator_page_operation_container div {
+    display: flex;
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 14px;
+    height: 32px;
+    line-height: 17px;
+    align-items: center;
+    gap: 6px;
+}
+
+@keyframes modal_animation {
+    from {
+        opacity: 0.1;
+    }
+    to {
+        opacity: 1;
+    }
+}
 
 @media screen and (max-width: 1075px) {
 
@@ -475,11 +606,37 @@ p.contact_us_desc {
         100% {margin-left:calc(100% - 15px * 9 - 164px * 10);}
     }
     
+    .generator_page_container {
+        width: 100%;
+        height: auto;
+        top: auto;
+        left: auto;
+        bottom: 0px;
+        transform: none;
+    }
+    .generator_page_content_container {
+        display: block;
+    }
+    .generator_page_result {
+        width: 100%;
+        height: 251px;
+    }
+
+    .generator_page_prompts_container {
+        width: 100%;
+    }
     
+    #generator_page_btn {
+        height: 40px;
+    }
+
+    .generator_page_operation_container {
+        margin-top: 32px;
+        margin-bottom: 24px;
+    }
+
+    .generator_page_prompts_title {
+        margin-top: 16px;
+    }
 }
 
-.generator_page_s {
-    background-color: red;
-    width: 500px;
-    height: 300px;
-}
