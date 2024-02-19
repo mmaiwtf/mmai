@@ -347,6 +347,7 @@ p.contact_us_desc {
     top: 0;
     left: 0;
     display: none;
+    z-index: 1;
 }
 
 .generator_page_container {
