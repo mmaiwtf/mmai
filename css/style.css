@@ -389,7 +389,7 @@ p.contact_us_desc {
 .generator_page_result {
     width: 365px;
     height: 267px;
-    background: url("../res/imgs/test_placeholder.jpg") center / cover;
+    background: url("../res/imgs/test_placeholder.jpg") center / contain no-repeat;
 }
 
 .generator_page_prompts_container {
@@ -419,6 +419,7 @@ p.contact_us_desc {
     color: #66C8FF;
     font-size: 14px;
     line-height: 17px;
+    display: none;
 } 
 
 #generator_page_prompts_input::placeholder {

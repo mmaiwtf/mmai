@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="./res/imgs/favicon.ico">
     <script src="./script/jQuery.js"></script>
     <script src="./script/jquery.scrollTo.min.js"></script>
-    <script type="text/javascript" src="./script/photo.js"></script>
+    <script src="./script/index.js"></script>
 
     <title>MMAI</title>
 </head>
@@ -42,14 +42,14 @@
         <div class="generator_button" id="generator_c">Generate</div>
     </div>
 
-    <div class="generator_page_box">
+    <div class="generator_page_box" id="generator_page_box_c">
         <div class="generator_page_container">
             <div class="generator_page_navi">
                 <p>Generate</p>
                 <img id="generator_close_c" src="./res/imgs/generator_close.svg" alt="">
             </div>
             <div class="generator_page_content_container">  
-                <img class="generator_page_result" alt="">
+                <img id="generator_page_result_c" class="generator_page_result" src="./res/imgs/generate_placeholder.svg" alt="image">
                 <div class="generator_page_prompts_container">
                     <div class="generator_page_prompts_title">
                         <p>Prompts</p>
@@ -58,13 +58,9 @@
                     <textarea id="generator_page_prompts_input" placeholder="Please enter prompts"></textarea>
                     <div class="generator_button" id="generator_page_btn">Generate</div>
                     <div class="generator_page_operation_container">
-                        <div>
+                        <div id="generator_download_c">
                             <img src="./res/imgs/generator_download.svg" alt="">
                             <p>Download</p>
-                        </div>
-                        <div>
-                            <img src="./res/imgs/generator_share.svg" alt="">
-                            <p>Share</p>
                         </div>
                     </div>
                 </div>
@@ -167,16 +163,13 @@
             }, 800)
         })
 
-        $('#generator_c').click(function() {
-            $('.generator_page_box').css("display", "block")
-            $('html').css("overflow", "hidden")
-        })
-
         $('#generator_close_c').click(function(){
             $('.generator_page_box').css("display", "none")
             $('html').css("overflow", "auto")
         })
+
     </script>
+
 
 </body>
 </html>
