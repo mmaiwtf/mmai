@@ -389,7 +389,6 @@ p.contact_us_desc {
 .generator_page_result {
     width: 365px;
     height: 267px;
-    background: url("../res/imgs/test_placeholder.jpg") center / contain no-repeat;
 }
 
 .generator_page_prompts_container {
