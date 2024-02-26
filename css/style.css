@@ -472,6 +472,44 @@ p.contact_us_desc {
     }
 }
 
+
+.loading-screen {top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.loading{
+    width: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate{
+    to{
+        transform: rotate(360deg);
+    }
+}
+.loading .flour{
+    width: 32px;
+    height: 32px;
+    background-color: #fff;
+    margin: 4px;
+    border-radius: 50%;
+    animation: scale 1.5s linear infinite;
+}
+
+@keyframes scale{
+    50%{
+        transform: scale(1.2);
+    }
+}
+
 @media screen and (max-width: 1075px) {
 
     .navigator {
