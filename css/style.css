@@ -377,7 +377,6 @@ p.contact_us_desc {
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 24px;
-    animation: modal_animation 1s;
 }
 
 .generator_page_content_container {
@@ -462,16 +461,6 @@ p.contact_us_desc {
     align-items: center;
     gap: 6px;
 }
-
-@keyframes modal_animation {
-    from {
-        opacity: 0.1;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 
 .loading-screen {top: 0;
     width: 100%;
