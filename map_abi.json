@@ -25,8 +25,8 @@
             "function sellinfos(uint256) view returns (uint256 id, uint256 price)",
             "function supportsInterface(bytes4 interfaceId) view returns (bool)"
         ],
-        "addr": "0xB7d2dBea99FA3c5102CA65A9B3DB1A355F4BbB72",
-        "deployer": "0x53C625E4ae22DB04Df95DDEc73626C617e5D15cd"
+        "addr": "0x90bFf91FEa2EB37f9aE892a4499100579BDB75e6",
+        "deployer": "0xd0b7B4988232b9fc7a996E75d32DcBcf46D921e9"
     },
     {
         "name": "SellerProxy",
@@ -48,7 +48,7 @@
             "function supportsInterface(bytes4 interfaceId) view returns (bool)",
             "receive() payable"
         ],
-        "addr": "0xfFeb75fB86EC0419C7b76DE23bd28ccD479e5818",
-        "deployer": "0x53C625E4ae22DB04Df95DDEc73626C617e5D15cd"
+        "addr": "0xB782869A67790fB7C52dF7525054501aE4928ec7",
+        "deployer": "0xd0b7B4988232b9fc7a996E75d32DcBcf46D921e9"
     }
 ]
