@@ -74,6 +74,23 @@ a {
     color: #66C8FF;
 }
 
+.banner-buycoin {
+    font-size: 16px;
+    font-family: Montserrat;
+    border: #66C8FF solid 1px;
+    color: #66C8FF;
+    width: 260px;
+    height: 56px;
+}
+
+.banner-buycoin a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
 .banner_bg_s {
     background: url("../res/imgs/banner_bg.jpg") center center no-repeat;
     background-position-y: 0px;
@@ -116,11 +133,12 @@ a {
 
 .generator_s {
     display: flex;
+    gap: 48px;
     justify-content: center;
 }
 
 .generator_button {
-    width: 440px;
+    width: 260px;
     height: 56px;
     font-size: 20px;
     line-height: 30px;
@@ -348,6 +366,7 @@ p.contact_us_desc {
     left: 0;
     display: none;
     z-index: 1;
+    background-color: #00000050;
 }
 
 .generator_page_container {
@@ -388,6 +407,20 @@ p.contact_us_desc {
 .generator_page_result {
     width: 365px;
     height: 267px;
+}
+
+.generator_page_place {
+    background-color: #1E2A34;
+    width: 365px;
+    height: 267px;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+}
+
+#generator_page_result_c {
+    display: none;
 }
 
 .generator_page_prompts_container {
@@ -533,6 +566,13 @@ p.contact_us_desc {
         height: 24px;
         width: 24px;
     }
+    
+    .generator_s {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+    }
+
     #roadmap_c {
         margin: 32px 12px 0px 12px;
         align-items: center;
@@ -646,6 +686,11 @@ p.contact_us_desc {
         display: block;
     }
     .generator_page_result {
+        width: 100%;
+        height: 251px;
+    }
+
+    .generator_page_place {
         width: 100%;
         height: 251px;
     }
