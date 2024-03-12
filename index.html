@@ -21,6 +21,7 @@
             </div>
 
             <div class="button_container_c">
+                <div id="stake-button" class="func-new">Stake</div>
                 <div id="about_button">About</div>
                 <div id="roadmap_button">Roadmap</div>
             </div>
@@ -179,6 +180,10 @@
         $('#generator_close_c').click(function(){
             $('.generator_page_box').css("display", "none")
             $('html').css("overflow", "auto")
+        })
+
+        $('#stake-button').click(() => {
+            window.open('./stake/stake.html', '_self')
         })
 
     </script>

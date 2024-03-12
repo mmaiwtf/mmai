@@ -1,18 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 html{ 
     background-color: #0B0D0F;
     font-family: Quantico;
 }
 
 body {
-    margin: 0 auto;
-    padding: 0;
     max-width: 1440px;
     align-items: center;
 }
 
 div {
-    margin: 0;
-    padding: 0;
     cursor: default;
 }
 
@@ -23,7 +24,7 @@ a {
 
 @font-face {
     font-family: Quantico;
-    src: url("../res/fonts/Quantico-Regular.ttf") format('truetype');
+    src: url("../res/fonts/Quantico.woff2") format('woff2');
 }
 @font-face {
     font-family: Montserrat;
@@ -32,7 +33,7 @@ a {
 
 @font-face {
     font-family: Pixel;
-    src: url("../res/fonts/04B_21__.TTF") format('truetype');
+    src: url("../res/fonts/04b_21.woff2") format('truetype');
 }
 
 .button_container_c {
@@ -531,6 +532,24 @@ p.contact_us_desc {
         transform: scale(1.2);
     }
 }
+
+.func-new {
+    position: relative;
+    padding-right: 10px;
+}
+
+.func-new::after {
+    content: "N\0045\0057"; /* 这里是标签文本 */
+    font-family: 'Pixel'; 
+    position: absolute;
+    top: -5px;
+    right: 0;
+    background-color: #4FF3FD; /* 标签背景颜色 */
+    color: #000; /* 标签文字颜色 */
+    padding: 2px 2px; /* 标签内边距 */
+    font-size: 10px; /* 标签文字大小 */
+    transform: translate(50%, -50%); /* 定位在右上角 */
+  }
 
 @media screen and (max-width: 1075px) {
 
