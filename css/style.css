@@ -9,6 +9,7 @@ html{
 }
 
 body {
+    margin: 0 auto;
     max-width: 1440px;
     align-items: center;
 }

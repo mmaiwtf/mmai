@@ -2,6 +2,20 @@ html{
     background: url("../res/imgs/stake-banner-bg.svg") center center no-repeat;
     background-color: #0B0D0F;
     font-family: Montserrat;
+    height: 100%;
+}
+
+body {
+    max-width: 1440px;
+    min-width: 1080px;
+    min-height: 100%;
+    align-items: center;
+}
+
+.main {
+    min-height: calc(100vh - 65px);
+    display: flex;
+    flex-direction: column;
 }
 
 .airdrop-wrapper {
@@ -19,7 +33,8 @@ html{
 }
 
 .airdrop-wrapper p {
-    
+    margin-top: 24px;
+    margin-bottom: 24px;
     font-size: 16px;
     line-height: 28px;
     color: #fff;
@@ -37,6 +52,11 @@ html{
     margin-right: 32px;
     font-size: 16px;
     line-height: 20px;
+    max-width: 132;
+}
+
+.airdrop-wrapper a {
+    color: #66C8FF;
 }
 
 .countdown-wrapper {
@@ -109,7 +129,8 @@ html{
 .bottom-desc-wrapper {
     background-color: #16191D80;
     margin-top: 80px;
-    margin-bottom: 0;
+    /* margin-bottom: 0; */
+    flex: 1;
 }
 
 .bottom-desc-wrapper > p:first-child {
@@ -163,16 +184,28 @@ html{
     margin-top: 92px;
 }
 
-.bottom-desc-wrapper > p:nth-last-of-type(1) {
+
+
+.bottom-desc-sub-wrapper > img {
+    padding-left: 32px;
+}
+
+footer { 
+    height: 65px;
+    background-color: #16191D80;
+}
+
+footer > p {
     color: white;
     text-align: center;
     font-family: 'Quantico';
     font-size: 12px;
-    line-height: 17px;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    line-height: 65px;
 }
 
-.bottom-desc-sub-wrapper > img {
-    padding-left: 32px;
+footer > div {
+    height: 1px;
+    background-color: #666666;
+    opacity: 0.1;
+    width: 100%;
 }
