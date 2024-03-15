@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
@@ -7,14 +8,14 @@
     <meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="./res/imgs/favicon.ico">
-    <script src="./script/jQuery.js"></script>
+    <script src="./script/jquery.min.js"></script>
     <script src="./script/jquery.scrollTo.min.js"></script>
     <script src="./script/index.js"></script>
-
-    
+    <script src="./script/mmai.js"></script>
 
     <title>MMAI</title>
 </head>
+
 <body>
     <div class="banner_bg_s" id="banner_container">
         <div id="navigator" class="navigator">
@@ -53,10 +54,10 @@
 
     <div class="loading-screen" id="loading-screen-c">
         <div class="loading">
-            <div class="flour" ></div>
-            <div class="flour" ></div>
-            <div class="flour" ></div>
-            <div class="flour" ></div>
+            <div class="flour"></div>
+            <div class="flour"></div>
+            <div class="flour"></div>
+            <div class="flour"></div>
         </div>
     </div>
 
@@ -66,9 +67,10 @@
                 <p>Generate</p>
                 <img id="generator_close_c" src="./res/imgs/generator_close.svg" alt="">
             </div>
-            <div class="generator_page_content_container">  
+            <div class="generator_page_content_container">
                 <img id="generator_page_result_c" class="generator_page_result" src="" alt="image">
-                <div id="generator_page_place_c" class="generator_page_result generator_page_place"><img src="./res/imgs/generate_placeholder.svg" alt="image"></div>
+                <div id="generator_page_place_c" class="generator_page_result generator_page_place"><img
+                        src="./res/imgs/generate_placeholder.svg" alt="image"></div>
                 <div class="generator_page_prompts_container">
                     <div class="generator_page_prompts_title">
                         <p>Prompts</p>
@@ -107,11 +109,12 @@
             <div class="about_details_desc_title_container_s">
                 <img src="./res/imgs/banner_desc_title.png" alt="" class="about_details_desc_title_s">
             </div>
-            
+
             <div class="about_details_desc_container_s">
                 <div class="about_details_desc_s"></div>
                 <div class="about_details_desc_text_container_s">
-                    <p class="about_details_desc_o_s">MMAI is a Bitcoin Inscription that sucks all webcomic characters and Internet memes and created by AI cartoonists.</p>
+                    <p class="about_details_desc_o_s">MMAI is a Bitcoin Inscription that sucks all webcomic characters
+                        and Internet memes and created by AI cartoonists.</p>
                 </div>
             </div>
         </div>
@@ -127,7 +130,8 @@
             <div class="tokenomics_details_desc_s">
                 <p class="tokenomics_details_desc_o_s">Limited edition mint</p>
                 <p class="tokenomics_details_desc_t_s">500</p>
-                <p class="tokenomics_details_desc_tr_s">The Fair Launch is about to begin. 10% of all revenue will be used to burn the Meme inscription</p>
+                <p class="tokenomics_details_desc_tr_s">The Fair Launch is about to begin. 10% of all revenue will be
+                    used to burn the Meme inscription</p>
             </div>
             <img class="tokenomics_details_img_s" src="./res/imgs/tokenomics_coin.png" alt="">
         </div>
@@ -150,8 +154,10 @@
         <p class="contact_us_title">CONTACT US</p>
         <p class="contact_us_desc">Scriptions lovers are welcome to join us</p>
         <div class="contact_us_link_s">
-            <a href="https://twitter.com/mmaibtc" target="_blank"><img src="./res/imgs/contact_us_twitter_icon.png" alt="twitter"></a>
-            <a href="http://t.me/MMAIBTC" target="_blank"><img src="./res/imgs/contact_us_telegram_icon.png" alt="telegram"></a>
+            <a href="https://twitter.com/mmaibtc" target="_blank"><img src="./res/imgs/contact_us_twitter_icon.png"
+                    alt="twitter"></a>
+            <a href="http://t.me/MMAIBTC" target="_blank"><img src="./res/imgs/contact_us_telegram_icon.png"
+                    alt="telegram"></a>
         </div>
     </div>
 
@@ -161,28 +167,21 @@
 
     <script>
 
-        const nfts = [9127,7156,9380,9382,7160,7661,5221,5222,5223,8221]
-
-        nfts.forEach((item) => {
-            const divstr = "<div class='carousel_set_content'><img src='./res/imgs/nfts/"+ item + ".png' alt=''><p class='carousel_set_content_name'>" + item + "</p><p class='carousel_set_content_id'>ID #" + item + "</p></div>"
-            $('#carousel_set_d').append(divstr)
-        })
-        
         $("#icp_c").text("©" + new Date().getFullYear() + "  by MMAI. All content generated by AI. All rights reserved.")
 
-        $('#about_button').click(function(){
-            $(window).animate ({
+        $('#about_button').click(function () {
+            $(window).animate({
                 scrollTop: $("#about_c").offset().top
             }, 800)
         })
 
-        $('#roadmap_button').click(function() {
-            $(window).animate ({
+        $('#roadmap_button').click(function () {
+            $(window).animate({
                 scrollTop: $("#roadmap_c").offset().top
             }, 800)
         })
 
-        $('#generator_close_c').click(function(){
+        $('#generator_close_c').click(function () {
             $('.generator_page_box').css("display", "none")
             $('html').css("overflow", "auto")
         })
@@ -194,9 +193,27 @@
         $('#slider-menu').click(() => {
             showMenu();
         })
+
+        const nfts = [9127, 7156, 9380, 9382, 7160, 7661, 5221, 5222, 5223, 8221]
+        webpIsSupported()().then(supported => {
+            if (supported) {
+                nfts.forEach((item) => {
+                    const divstr = "<div class='carousel_set_content'><img src='./res/imgs/mini-nfts/" + item + ".webp' alt=''><p class='carousel_set_content_name'>" + item + "</p><p class='carousel_set_content_id'>ID #" + item + "</p></div>"
+                    $('#carousel_set_d').append(divstr)
+                })
+            } else {
+                nfts.forEach((item) => {
+                    const divstr = "<div class='carousel_set_content'><img src='./res/imgs/nfts/" + item + ".png' alt=''><p class='carousel_set_content_name'>" + item + "</p><p class='carousel_set_content_id'>ID #" + item + "</p></div>"
+                    $('#carousel_set_d').append(divstr)
+                })
+            }
+        })
+
+
+
     </script>
     <script src="./script/modal.js"></script>
-    
 
 </body>
+
 </html>
