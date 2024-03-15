@@ -20,8 +20,11 @@
                     <div id="home-button">Home</div>
                 </div>
     
-                <div class="navigator_mint_s">
-                    <a href="https://bitget.lessgas.xyz/detail/mmai" target="_blank">Mint</a>
+                <div class="right-btn-wrapper">
+                    <div class="navigator_mint_s">
+                        <a href="https://bitget.lessgas.xyz/detail/mmai" target="_blank">Mint</a>
+                    </div>
+                    <div id="slider-menu"><img src="../res/imgs/slider-menu.svg" alt=""></div>
                 </div>
             </div>
     
@@ -30,8 +33,10 @@
     
         <div class="airdrop-wrapper">
             <img src='../res/imgs/stake-airdrop.png'; alt="airdrop">
-            <p>Users whose MMAI asset value reaches or exceeds 21MMAI on Map's LSGS protocol MMAI pledge page at 11 a.m. on March 15 (time UTC+8) can equally share 20% of all M2AI</p>
-            <div class="generator_button">Go To Stake</div>
+            <div>
+                <p>Users whose MMAI asset value reaches or exceeds 21MMAI on Map's LSGS protocol MMAI pledge page at 11 p.m. on March 15 (time UTC+8) can equally share 20% of all M2AI</p>
+                <div class="generator_button stake-button">Go To Stake</div>
+            </div>
         </div>
     
         <div class="countdown-wrapper">
@@ -44,7 +49,7 @@
                 <p id="countdown-second">00</p>
                 <p>S</p>
             </div>
-            <p>From 16:00 pm (UTC+8) on March 21st to 11am (UTC+8) on March 23rd, users who meet the airdrop conditions can check their eligibility and receive the $M2AI airdrop by logging in to their wallet. Invalid after expiration!</p>
+            <p>From 11:00 p.m. (UTC+8) on March 15th to 11:00 p.m. (UTC+8) on March 22nd, users who meet the airdrop conditions can check their eligibility and receive the $M2AI airdrop by logging in to their wallet. Invalid after expiration!</p>
             <div>Receive Airdrop</div>
             <a href="https://meme-kingdom.gitbook.io/usdm2ai-airdrop-introduction-and-rules/">Documentation</a>
         </div>
@@ -76,7 +81,10 @@
         $('#home-button').click(()=> {
             history.back()
         })
-        const targetDate = new Date('2024-03-21 11:00:00');
+        $('.stake-button').click(()=> {
+            window.open('https://app.lessgas.xyz/notices')
+        })
+        const targetDate = new Date('2024-03-22 23:00:00 utc+8');
         function countdown() {
             const currentDate = new Date();
             var daysRemaining = Math.floor((targetDate - currentDate) / (1000 * 60 * 60 * 24));
@@ -91,6 +99,10 @@
         if (targetDate - new Date() > 0) {
             setInterval(countdown, 1000);
         }
+        $('#slider-menu').click(() => {
+            showMenu();
+        })
     </script>
+    <script src="../script/modal.js"></script>
 </body>
 </html>

@@ -70,6 +70,8 @@ a {
 
 .navigator_mint_s {
     font-size: 16px;
+    display: flex;
+    align-items: center;
     font-family: Montserrat;
     border: #66C8FF solid 1px;
     padding: 5px 32px 5px 32px ;
@@ -552,6 +554,17 @@ p.contact_us_desc {
     transform: translate(50%, -50%); /* 定位在右上角 */
   }
 
+.right-btn-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.right-btn-wrapper > div:last-child {
+    width: 32px;
+    height: 32px;
+    display: none;
+}
+
 @media screen and (max-width: 1075px) {
 
     .navigator {
@@ -731,5 +744,10 @@ p.contact_us_desc {
     .generator_page_prompts_title {
         margin-top: 16px;
     }
+
+    .right-btn-wrapper > div:last-child {
+        display:block;
+    }
+    
 }
 

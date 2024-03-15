@@ -11,6 +11,8 @@
     <script src="./script/jquery.scrollTo.min.js"></script>
     <script src="./script/index.js"></script>
 
+    
+
     <title>MMAI</title>
 </head>
 <body>
@@ -26,8 +28,11 @@
                 <div id="roadmap_button">Roadmap</div>
             </div>
 
-            <div class="navigator_mint_s">
-                <a href="https://bitget.lessgas.xyz/detail/mmai" target="_blank">Mint</a>
+            <div class="right-btn-wrapper">
+                <div class="navigator_mint_s">
+                    <a href="https://bitget.lessgas.xyz/detail/mmai" target="_blank">Mint</a>
+                </div>
+                <div id="slider-menu"><img src="./res/imgs/slider-menu.svg" alt=""></div>
             </div>
         </div>
 
@@ -186,8 +191,12 @@
             window.open('./stake/stake.html', '_self')
         })
 
+        $('#slider-menu').click(() => {
+            showMenu();
+        })
     </script>
-
+    <script src="./script/modal.js"></script>
+    
 
 </body>
 </html>
