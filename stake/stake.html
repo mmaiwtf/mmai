@@ -84,7 +84,11 @@
         $('.stake-button').click(()=> {
             window.open('https://app.lessgas.xyz/notices')
         })
-        const targetDate = new Date('2024-03-22 23:00:00 utc+8');
+        var targetDate = new Date('2024-03-22 23:00:00');
+        const timezoneOffset = targetDate.getTimezoneOffset();
+        const timezoneOffsetInMs = timezoneOffset + 480;
+        targetDate = targetDate.getTime() + Math.floor(timezoneOffset / 60)
+
         function countdown() {
             const currentDate = new Date();
             var daysRemaining = Math.floor((targetDate - currentDate) / (1000 * 60 * 60 * 24));
@@ -102,6 +106,8 @@
         $('#slider-menu').click(() => {
             showMenu();
         })
+
+
     </script>
     <script src="../script/modal.js"></script>
 </body>
