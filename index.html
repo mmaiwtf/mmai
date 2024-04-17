@@ -30,6 +30,11 @@
             </div>
 
             <div class="right-btn-wrapper">
+                <div id="switch-chain" class="chain-wrapper">
+                    <img id="chain-img-id" class="chain-img" src="./res/imgs/chain-mapo.webp" alt="">
+                    <div id="chain-name-id" class="chain-name">MAPO</div>
+                    <img src="./res/imgs/arrow.svg" alt="">
+                </div>
                 <div class="navigator_mint_s">
                     <a href="https://bitget.lessgas.xyz/detail/mmai" target="_blank">Mint</a>
                 </div>
@@ -190,10 +195,6 @@
             window.open('./stake/stake.html', '_self')
         })
 
-        $('#slider-menu').click(() => {
-            showMenu();
-        })
-
         const nfts = [9127, 7156, 9380, 9382, 7160, 7661, 5221, 5222, 5223, 8221]
         webpIsSupported()().then(supported => {
             if (supported) {
@@ -212,7 +213,6 @@
 
 
     </script>
-    <script src="./script/modal.js"></script>
 
 </body>
 
